@@ -3,10 +3,10 @@ class Ship
 
   @@ships = []
 
-  def initialize(params)
-    @name = params[:name]
-    @type = params[:type]
-    @booty = params[:booty]
+  def initialize(args)
+    @name = args[:name]
+    @type = args[:type]
+    @booty = args[:booty]
     @@ships << self
   end
 
@@ -15,6 +15,6 @@ class Ship
   end
 
   def self.clear
-    @@ships.clear
+    @@ships = []
   end
-end #of class
+end
